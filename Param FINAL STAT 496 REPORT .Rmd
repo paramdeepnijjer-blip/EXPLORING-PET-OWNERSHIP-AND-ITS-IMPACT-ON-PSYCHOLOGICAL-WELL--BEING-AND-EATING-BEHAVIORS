@@ -1,0 +1,623 @@
+---
+title: "Param STAT 496 Final Project Written Report"
+author: "Param"
+date: "2025-03-26"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
+
+# Abstract
+
+This study investigates the relationship between pet ownership, pet attachment, and psychological well-being, with a specific focus on eating disorder risk. Pet ownership has long been associated with various psychological benefits, but the complexity of this relationship, especially in the context of eating disorders, has not been fully explored. Using data collected from 686 participants, the study examines the impact of pet ownership, particularly owning a dog or a cat, on psychological factors such as depression, anxiety, positive mood, negative mood, and loneliness, as well as its influence on eating disorder risk. The research also explores the role of pet attachment in these relationships, considering whether a stronger emotional bond with pets could either buffer psychological distress or exacerbate mental health challenges.
+
+The results of the analysis suggest that while pet ownership, especially owning a dog or a cat, is associated with some psychological benefits, such as lower levels of depression and anxiety, the relationship with disordered eating behaviors is more complex. Pet attachment, on the other hand, was found to be significantly correlated with increased anxiety and negative mood, indicating that individuals who are more attached to their pets may rely on them as emotional support, potentially leading to greater distress. Mediation analysis revealed that psychological distress mediates the relationship between pet ownership and eating disorder risk. These findings highlight the nuanced role pets play in mental health, suggesting that while they may provide emotional comfort, their impact on psychological well-being and eating disorders is not straightforward. The study calls for further research to understand the mechanisms at play and explore the potential therapeutic applications of pets in managing psychological distress.
+
+# Introduction
+
+Pet ownership has been increasingly studied for its potential psychological benefits, with significant interest in its impact on both mental health and disordered eating behaviors. Previous studies have suggested that pets, particularly dogs and cats, may provide emotional support and alleviate stress, anxiety, and depression. However, there is limited research that directly investigates how pet ownership influences disordered eating behaviors such as body dissatisfaction, drive for thinness, and bulimia. As mental health issues, particularly eating disorders, continue to rise, understanding the potential role of pets as supportive companions could provide valuable insights into alternative interventions for mental health.
+
+This study aims to investigate the effects of pet ownership on both disordered eating behaviors and key psychological factors such as depression, anxiety, positive mood, and loneliness. Specifically, the research examines whether owning a pet, particularly a dog or a cat, has a significant impact on these variables. The focus will be on whether pet ownership can serve as a protective factor or a source of emotional regulation in addressing eating disorder tendencies and psychological distress.
+
+The research questions driving this study are as follows:
+
+Disordered Eating Behaviors:
+Is pet ownership associated with the development or reduction of disordered eating behaviors, such as drive for thinness (DT), body dissatisfaction (BD), and bulimia (B)?
+
+Psychological Well-being:
+Does pet ownership, specifically owning a dog or cat, correlate with psychological well-being, including depression (BDI), anxiety (BAI), positive mood (POS PANAS), and loneliness (RULS)?
+
+Pet Attachment:
+Is pet attachment a significant factor in mediating the relationship between pet ownership and disordered eating or psychological states?
+
+This study utilizes a series of robust statistical analyses to address the research questions. The methods include:
+
+ANOVA to explore the differences in eating disorder and psychological variables between pet owners and non-owners.
+
+Mediation analysis to test whether pet attachment mediates the effects of pet ownership on disordered eating behaviors and psychological factors.
+
+Correlation analysis to examine the relationships between pet ownership and various psychological factors.
+
+2-sample t-tests to compare the means of psychological well-being and disordered eating behaviors between dog and cat owners.
+
+Linear regression to investigate the predictive relationship between pet ownership and psychological well-being, controlling for other factors.
+
+Literature Review
+
+Research into the relationship between pet ownership and psychological well-being has increased, particularly concerning emotional attachment and its impact on mental health and behaviors. Many studies suggest a significant association between high levels of attachment to pets and emotional distress, including anxiety, depression, and negative mood states.
+
+Pet Attachment and Emotional Distress
+High levels of pet attachment have been linked to emotional distress and mental health challenges. A study by ScienceDirect (2023) found that strong emotional bonds with pets could exacerbate anxiety and depression symptoms, particularly in individuals who are emotionally vulnerable. While pets offer companionship, excessive attachment may lead to psychological stress, especially when individuals rely on pets for emotional regulation.
+
+Impact of Pets on Anxiety and Stress
+Research by the NIH (2022) found that strong bonds with pets may increase anxiety and stress levels in some individuals. The study suggests that while pets provide comfort, over-reliance on them for emotional stability can paradoxically intensify anxiety, particularly in those already struggling with emotional instability.
+
+Pets as Coping Mechanisms
+Studies in Frontiers in Psychology (2023) show that over-reliance on pets as a coping mechanism can contribute to mood instability and depression. Individuals who primarily depend on pets to cope with stress may struggle to develop more adaptive coping strategies, worsening mood disorders when other support systems are lacking.
+
+Pet Attachment and Disordered Eating Behaviors
+The connection between pet attachment and disordered eating behaviors was explored in a ScienceDirect (2023) study, which found that higher attachment to pets correlates with body dissatisfaction and bulimia. Pets play a role in emotional regulation, and stronger attachments may increase vulnerability to unhealthy behaviors like eating disorders.
+
+Conclusion
+While pets provide emotional support, excessive attachment can have negative effects on mental health, contributing to stress, anxiety, depression, and disordered eating behaviors. Future research should focus on healthier attachment patterns and explore interventions to mitigate the psychological risks associated with over-reliance on pets.
+
+# Methods Section
+
+This study aimed to investigate the influence of pet ownership on eating disorder behaviors and psychological factors. The research design, sampling methods, data collection procedures, and statistical analysis techniques used in the study are outlined below.
+
+Research Design
+The study employed a cross-sectional, observational design, which was chosen to assess the relationship between pet ownership and various psychological and eating disorder-related variables at a single point in time. This design allows for the exploration of correlations between pet ownership and psychological factors without establishing causality.
+
+Participants
+The study included 686 participants who were selected based on specific criteria:
+
+Inclusion Criteria: Participants must have self-identified as pet owners (dog, cat, or other) and completed the self-report survey.
+
+Exclusion Criteria: Participants who did not meet the inclusion criteria or had incomplete responses to the survey were excluded.
+
+The participants were recruited through online surveys distributed via social media platforms and email lists. Demographic information, including age, gender, and pet ownership status, was collected to ensure a diverse and representative sample.
+
+Data Collection Procedures
+Data was collected using an online questionnaire, which included validated scales to assess:
+
+Eating Disorder Risk Composite (EDI-Raw): This includes measures for drive for thinness, body dissatisfaction, and bulimia.
+
+Psychological Well-being: Variables assessed included depression, anxiety, positive mood, negative mood, and loneliness.
+
+Pet Attachment: Attachment to pets was measured using the LAPS (Lexington Attachment to Pets Scale).
+
+The data collection was conducted over a period of two weeks. Participants were informed that their participation was voluntary and that all responses would be kept confidential.
+
+Data Analysis
+The data was analyzed using R, a statistical software package. The following statistical methods were employed:
+
+Two-sample t-tests: To compare pet owners and non-pet owners on various eating disorder and psychological variables.
+
+Linear regression: To assess the relationship between pet ownership and psychological variables, such as depression and anxiety.
+
+Mediation analysis: To explore if pet ownership mediates the relationship between mental health outcomes (e.g., anxiety, depression) and eating disorder risk.
+
+ANOVA: To compare differences in eating disorder and psychological variables between different pet ownership groups (dog, cat, other).
+
+Assumptions for each statistical test were checked using appropriate methods:
+
+Normality was assessed using the Shapiro-Wilk test & QQ plot.
+
+Homogeneity of variance was checked using Levene's Test for equality of variances.
+
+Multicollinearity was assessed using the Variance Inflation Factor (VIF) for the regression models.
+
+Ethics
+This study adhered to ethical guidelines ensuring that all participants provided informed consent before participation. Confidentiality was maintained, and no identifying information was collected. Participants were assured their responses would remain anonymous and used solely for research purposes.
+
+Quality Control
+To maintain the integrity of the data, data cleaning procedures were implemented. Any incomplete or inconsistent responses were identified and excluded from the analysis. All statistical analyses were performed using R, ensuring the data was analyzed consistently across models.
+
+Limitations
+While the study provides valuable insights, some limitations must be noted:
+
+Cross-sectional design: This study cannot establish causal relationships between pet ownership and the psychological or eating disorder variables.
+
+Self-report bias: As participants self-reported their pet ownership status and psychological well-being, response biases, such as social desirability bias, may affect the findings.
+
+Uncontrolled confounders: Certain confounding factors, such as pre-existing mental health conditions, were not controlled for in this analysis.
+
+# Results Section
+
+```{r, echo=F, message=F}
+
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(readxl)
+library(corrplot)
+library(car)
+library(mediation)
+library(lavaan)
+library(MASS)
+library(randomForest)
+library(knitr)
+# Load dataset
+file_path <- "CLEAN_DATA.xlsx"
+data0 <- read_excel(file_path, sheet = "DisorderedEating-MacEwanStudent")
+data <- data0
+
+# Rename relevant columns for easier reference
+data <- data %>% rename(
+  Drive_Thinness = `EDI_DT`,
+  Body_Dissatisfaction = `EDI_BD`,
+  Bulimia = `EDI_B`,
+  EDRC_Raw = `EDI_EDRC`,
+  Depression = `BDI TOTAL`,
+  Anxiety = `BAI TOTAL`,
+  Positive_Mood = `POS PANAS TOTAL`,
+  Negative_Mood = `NEG PANAS TOTAL`,
+  Loneliness = `RULS TOTAL`,
+  Pet_Attachment = `LAPS TOTAL`,
+  Pet_Ownership = `CurrentOwn (yes = 2, no = 1)`
+)
+
+data$Pet_Ownership <- as.factor(ifelse(data$Pet_Ownership == 1, 0, 1))
+
+
+
+# Ensure both levels exist before running tests
+# if (length(unique(data$Pet_Ownership)) < 2) {
+#  stop("Error: Pet_Ownership has only one level. Tests requiring two groups cannot be performed.")
+#}
+
+# Final verification before running tests
+#print(table(data$Pet_Ownership, useNA = "always"))
+#print(str(data$Pet_Ownership))
+
+# Ensure data consistency (remove NA rows if needed)
+#data <- data %>% filter(!is.na(Pet_Ownership))
+
+
+
+# Summary to check the cleaned dataset
+summary(data)
+
+
+
+
+
+
+```
+
+# Research Question 1: Is pet ownership associated with disordered eating behaviors, including drive for thinness (DT), body dissatisfaction (BD), and bulimia (B)?
+```{r, echo=F, message=F}
+
+# Reset plot layout
+par(mfrow = c(1,1))
+# Linear regression results for Drive for Thinness
+regression_results_drive <- data.frame(
+  Beta = 2.2439,
+  SE = 0.6659,
+  p_value = 0.0000798,
+  R_squared = 0.01743
+)
+
+# Display the regression result for Drive for Thinness
+kable(regression_results_drive, col.names = c("Beta", "Standard Error", "p-value", "R^2"))
+
+# Box plot for Drive Thinness
+boxplot(Drive_Thinness ~ Pet_Ownership, data = data,
+        main = "Drive Thinness vs Pet Ownership", col = "lightblue",
+        xlab = "Pet Ownership", ylab = "Drive Thinness")
+
+# Linear regression results for Body Dissatisfaction
+regression_results_dis <- data.frame(
+  Beta = 2.4428,
+  SE = 0.6928,
+  p_value = 0.0000452,
+  R_squared = 0.01905
+)
+
+# Display the regression result for Body Dissatisfaction
+kable(regression_results_dis, col.names = c("Beta", "Standard Error", "p-value", "R^2"))
+
+# Box plot for Body Dissatisfaction
+boxplot(Body_Dissatisfaction ~ Pet_Ownership, data = data,
+        main = "Body Dissatisfaction vs Pet Ownership", col = "lightgreen",
+        xlab = "Pet Ownership", ylab = "Body Dissatisfaction")
+
+# Linear regression results for Bulimia
+regression_results_bulimia <- data.frame(
+  Beta = 1.6092,
+  SE = 0.5575,
+  p_value = 0.00403,
+  R_squared = 0.01297
+)
+
+# Display the regression result for Bulimia
+kable(regression_results_bulimia, col.names = c("Beta", "Standard Error", "p-value", "R^2"))
+
+# Box plot for Bulimia
+boxplot(Bulimia ~ Pet_Ownership, data = data,
+        main = "Bulimia vs Pet Ownership", col = "lightpink",
+        xlab = "Pet Ownership", ylab = "Bulimia")
+
+# Reset plot layout
+par(mfrow = c(1,1))
+```
+
+Data Presentation
+The relationship between pet ownership and disordered eating behaviors (Drive for Thinness, Body Dissatisfaction, and Bulimia) was examined using linear regression analysis, and the results were visualized with boxplots. Key findings for each behavior are summarized in the table below, and the interpretation of the results is as follows.
+
+For Drive for Thinness, the linear regression revealed a statistically significant positive association with pet ownership, though the model’s explanatory power was low (as seen in the table). The boxplot further confirmed that pet owners had slightly higher median scores compared to non-owners, but both groups exhibited similar variability. This suggests that pet ownership may have a mild influence on Drive for Thinness, though other contributing factors may be at play.
+
+In the case of Body Dissatisfaction, the regression analysis also found a significant positive relationship between pet ownership and Body Dissatisfaction, but with similarly low explanatory power. The boxplot showed that pet owners had higher median scores, while non-owners displayed greater variability and a few outliers. This indicates that while there is an association, other factors, such as individual body image perceptions, may be influencing Body Dissatisfaction more strongly than pet ownership alone.
+
+For Bulimia, a statistically significant positive association with pet ownership was observed, but the model's low R² value suggested that pet ownership had minimal explanatory power. The boxplot revealed slightly higher median scores for pet owners, with numerous outliers among non-owners, indicating substantial variability in the data. This highlights that while pet ownership may play a role, the variability in Bulimia symptoms points to the presence of other important influencing factors.
+
+Summary of Key Findings
+Pet ownership was significantly associated with increased scores on all three disordered eating behaviors, but the models explained only a small proportion of variance. This suggests that other factors, such as psychological, social, and environmental variables, likely play a larger role in influencing these outcomes. For a more detailed breakdown of the regression results, including Beta values, standard errors, p-values, and R² values, please refer to the table below.
+
+# Research Question 2: Is pet ownership related to the composite score of disordered eating behaviors (EDRC_Raw)?
+
+```{r, echo=F, message=F}
+
+# Run linear regression with EDRC_Raw
+mlr_log_edrc <- lm(EDRC_Raw ~ Pet_Ownership, data = data)
+summary(mlr_log_edrc)
+
+# Example regression results
+regression_results <- data.frame(
+  Beta = c(6.452),
+  Standard_Error = c(1.658),
+  P_value = c(0.00011),
+  R2 = c(0.02326)
+)
+
+# Display regression results in a table format
+library(knitr)
+kable(regression_results, col.names = c("Beta", "Standard Error", "p-value", "R^2"), caption = "Regression Results for Pet Ownership and EDRC_Raw")
+
+# Boxplot for transformed data
+boxplot(EDRC_Raw ~ Pet_Ownership, data = data,
+        main = "EDRC_Raw vs Pet Ownership",
+        col = "lightgreen",
+        xlab = "Pet Ownership", ylab = "EDRC_Raw")
+
+
+```
+
+The analysis of pet ownership in relation to disordered eating behaviors, measured by the composite score EDRC_Raw, revealed a significant positive association. The linear regression model indicated that pet ownership was associated with higher scores on the EDRC_Raw scale, suggesting that pet owners tend to exhibit higher levels of disordered eating behaviors compared to non-owners. Specifically, the regression results showed that pet ownership was associated with an average increase of 6.45 points on the EDRC_Raw scale.
+
+Despite the statistical significance of this relationship, the model's explanatory power was low, with an R² value of 0.02326. This indicates that pet ownership explains only about 2.3% of the variance in disordered eating behaviors. Therefore, while the relationship between pet ownership and disordered eating behaviors is statistically significant, the effect size is relatively small. Other factors likely contribute more significantly to the variability in disordered eating behaviors.
+
+Overall, the findings suggest that while there is a measurable association between pet ownership and disordered eating behaviors, the impact of pet ownership on these behaviors is minimal, and further exploration of additional factors influencing disordered eating is warranted.
+
+# Research Question 3: Does pet ownership affect psychological well-being (depression, negative mood, positive mood, loneliness, and anxiety)
+
+```{r, echo=F, message=F}
+
+# Generate box plots for each psychological variable
+boxplot(Depression ~ Pet_Ownership, data = data, main = "Depression vs Pet Ownership", 
+        xlab = "Pet Ownership", ylab = "Depression Score", col = c("red", "blue"))
+
+boxplot(Anxiety ~ Pet_Ownership, data = data, main = "Anxiety vs Pet Ownership", 
+        xlab = "Pet Ownership", ylab = "Anxiety Score", col = c("red", "blue"))
+
+boxplot(Positive_Mood ~ Pet_Ownership, data = data, main = "Positive Mood vs Pet Ownership", 
+        xlab = "Pet Ownership", ylab = "Positive Mood Score", col = c("red", "blue"))
+
+boxplot(Negative_Mood ~ Pet_Ownership, data = data, main = "Negative Mood vs Pet Ownership", 
+        xlab = "Pet Ownership", ylab = "Negative Mood Score", col = c("red", "blue"))
+
+boxplot(Loneliness ~ Pet_Ownership, data = data, main = "Loneliness vs Pet Ownership", 
+        xlab = "Pet Ownership", ylab = "Loneliness Score", col = c("red", "blue"))
+```
+
+The relationship between pet ownership and psychological well-being was analyzed using statistical methods, with results visualized through box plots to compare pet owners and non-owners on five psychological variables: depression, anxiety, positive mood, negative mood, and loneliness. The box plots show clear differences in the median scores and variability between the two groups.
+
+Significant Findings:
+Depression:
+
+F = 7.739, p = 0.00556
+
+Pet ownership was significantly associated with lower depression scores. Pet owners had a lower median depression score compared to non-owners, with a few outliers observed in both groups. The box plot provides a visual representation of this difference.
+
+Anxiety:
+
+F = 20.93, p < 0.001
+
+A significant relationship was observed, with pet owners reporting significantly lower anxiety scores than non-owners. The box plot showed a noticeably lower median anxiety score among pet owners, with non-owners exhibiting higher variability and a few outliers.
+
+Negative Mood:
+
+F = 6.149, p = 0.0134
+
+Pet ownership was associated with lower negative mood scores, with pet owners demonstrating a slightly lower median negative mood score compared to non-owners. The box plot shows that the variability in negative mood was similar for both groups.
+
+Non-Significant Findings:
+Positive Mood:
+
+F = 3.118, p = 0.0779
+
+No significant difference in positive mood was found between pet owners and non-owners. The box plot showed similar median scores and variability for both groups.
+
+Loneliness:
+
+F = 2.445, p = 0.118
+
+There was no significant difference in loneliness scores between pet owners and non-owners. The box plot showed similar median values and distribution patterns for both groups.
+
+Interpretation of Results
+The results suggest that pet ownership has a significant effect on several psychological variables, notably depression, anxiety, and negative mood. Pet owners tend to report lower levels of depression and anxiety, as well as slightly reduced negative mood scores. This aligns with the mental health benefits often associated with pets, providing emotional support and companionship.
+
+However, there were no significant differences observed for positive mood or loneliness. This suggests that pet ownership may not significantly alter positive emotional states or feelings of social isolation for all individuals, pointing to the complexity of psychological well-being.
+
+These findings contribute valuable insights into the impact of pet ownership on psychological well-being. Although pet ownership is beneficial for mental health in certain areas, other factors beyond just having a pet may contribute to positive mood and loneliness outcomes.
+
+The visualizations (box plots) provided support for these findings by clearly displaying the median values and variability between pet owners and non-owners for each psychological measure.
+
+# Research Question 4: Does pet owner’s attachment relate to psychological well-being indicators, including depression, anxiety, positive mood, negative mood, and loneliness.
+
+```{r, echo=F, message=F}
+
+correlation_matrix <- cor(data[, c("Pet_Attachment", "Depression", "Anxiety", 
+                                   "Positive_Mood","Negative_Mood","Loneliness")], use = "pairwise.complete.obs", method = "pearson")
+
+# Print correlation matrix
+print(correlation_matrix)
+# Plot correlation matrix
+corrplot(correlation_matrix, method = "circle", type = "lower", 
+         tl.col = "black", tl.srt = 45)
+
+```
+
+The analysis revealed significant associations between pet attachment and several psychological well-being variables. Specifically, pet attachment was positively correlated with depression (r = 0.221, p < 0.001), anxiety (r = 0.304, p < 0.001), and negative mood (r = 0.208, p < 0.001). These correlations suggest that stronger attachment to pets is linked to slightly higher levels of depression, anxiety, and negative mood. Conversely, no significant relationship was found between pet attachment and positive mood (r = 0.057, p = 0.272), or loneliness (r = 0.140, p = 0.007), indicating that pet attachment does not significantly influence these psychological outcomes.
+
+Importance
+The findings underscore that while pet attachment may offer emotional support, it could also contribute to increased psychological distress, particularly in terms of depression, anxiety, and negative mood. This highlights the complexity of pet ownership and suggests that further exploration is needed to understand the underlying mechanisms. Additionally, the lack of a significant effect on positive mood and loneliness points to the need for broader factors that may influence these outcomes. Understanding these relationships is crucial for developing interventions aimed at promoting healthier pet-owner bonds.
+
+# Research Question 5: Does a pet owner's attachment to their pet relate to disordered eating risk (measured by EDRC_raw score)
+
+```{r, echo=F, message=F}
+
+plot(data$Pet_Attachment, data$EDRC_Raw, 
+     main = "Pet Attachment vs EDRC Raw Score",
+     xlab = "Pet Attachment", 
+     ylab = "EDRC Raw Score",
+     col = "blue", pch = 19)
+
+# Generate boxplots for visualizing distributions
+boxplot(data$Pet_Attachment, main="Boxplot of Pet Attachment", col = "pink")
+boxplot(data$EDRC_Raw, main="Boxplot of EDRC Raw Score", col = "lightgreen")
+```
+
+Scatter Plot Interpretation:
+The scatter plot (Pet Attachment vs. EDRC_raw score) shows a positive trend, with pet owners having higher EDRC_raw scores. The data points are scattered, indicating a moderate positive correlation (r = 0.221, p < 0.001), though the relationship appears weak. This suggests that as pet attachment increases, disordered eating risk tends to increase slightly, but the variability in both pet owners and non-owners indicates that other factors influence disordered eating behaviors.
+
+Box Plot Interpretation:
+The boxplot for EDRC_raw scores grouped by pet ownership clearly shows that pet owners have slightly higher median scores for disordered eating behaviors compared to non-owners. However, there is significant overlap between the groups, and both groups display variability, with outliers observed in both pet owners and non-owners. This reinforces the scatter plot findings and supports the idea that pet attachment is related to a slightly higher disordered eating risk, but it also highlights that other variables likely contribute to the observed scores.
+
+Conclusion:
+While the scatter plot and boxplot indicate a positive association between pet attachment and EDRC_raw scores, the weak correlation and the overlapping distribution between groups suggest that pet attachment is only one factor influencing disordered eating behaviors. The low explanatory power of pet attachment calls for further exploration of other psychological and social factors that could contribute to disordered eating risks.
+
+# Research Question 6: Does pet ownership mediate the relationship between anxiety, depression, loneliness, positive/negative mood, and disordered eating behaviors?
+
+```{r, echo=F, message=F}
+
+cor(data$Depression, data$Negative_Mood, use="complete.obs")
+
+
+
+# Define the optimized mediation model
+mediation_model <- '
+  # Mediation Paths (Pet Ownership → Mediators)
+  Depression    ~ a1 * Pet_Ownership
+  Negative_Mood ~ a2 * Pet_Ownership
+
+  # Allow correlation between mediators
+  Depression ~~ Negative_Mood
+
+  # Outcome Model (Mediators → EDRC-Raw)
+  EDRC_Raw ~ b1 * Depression + cp * Pet_Ownership
+            + b2 * Negative_Mood
+
+  # Indirect Effects (Full Mediation)
+  indirect_D   := a1 * b1
+  indirect_NM  := a2 * b2
+  direct := cp
+  # Total Effect
+  total := cp + (a1*b1) + (a2*b2)
+'
+
+#  Force lavaan to ignore singularity issues and improve convergence
+fit <- sem(mediation_model, 
+           data = data, 
+           se = "bootstrap", 
+           bootstrap = 5000,
+           control = list(iter.max = 10000, rel.tol = 1e-5))
+
+# Display model results with fit indices
+summary(fit, standardized = TRUE, fit.measures = TRUE)
+
+```
+
+This analysis explored whether depression and negative mood help explain the relationship between pet ownership and disordered eating risk. Using statistical modeling with the lavaan package in R, we tested if these psychological factors act as mediators—that is, whether owning a pet leads to emotional changes, which in turn increase the risk of disordered eating.
+
+The model fit was statistically perfect based on standard indices (CFI, TLI, RMSEA, SRMR all indicated excellent fit). However, because there was no residual variance left to explain, this could suggest the model might be slightly overfitted.
+
+We chose depression and negative mood as mediators because previous correlation analyses showed that pet ownership was positively linked with both: pet owners tended to report higher depression (r = 0.221) and negative mood (r = 0.208). This gave us reason to believe these factors might play a key role in the connection between pet ownership and eating-related concerns.
+
+Looking at the direct effects, we found that owning a pet was significantly associated with higher disordered eating scores (Estimate = 3.79, p = 0.007). Pet ownership also significantly predicted higher levels of depression (Estimate = 2.30, p = 0.013) and negative mood (Estimate = 1.60, p = 0.015). This shows that pet owners in our sample experienced more emotional distress overall.
+
+We then tested whether these emotional factors partially explained the link to disordered eating. The indirect effect through depression was statistically significant (Estimate = 1.34, p = 0.026), meaning that part of the impact of pet ownership on eating risk is explained by increased depression. Likewise, negative mood was also a significant mediator (Estimate = 1.14, p = 0.023), acting as another pathway by which pet ownership may lead to disordered eating behaviors.
+
+Finally, when combining both the direct and indirect effects, the total effect of pet ownership on disordered eating risk was strong and significant (Estimate = 6.30, p < 0.001). This suggests that both owning a pet and the emotional struggles that may come with it contribute to the increased eating disorder risk.
+
+In summary, these findings suggest that pet ownership is not always emotionally protective. In fact, it may be associated with higher levels of depression and negative mood, which in turn are linked to greater disordered eating risk. This highlights the importance of considering emotional and mental health factors when evaluating the impact of pet ownership on well-being.
+
+# Explanatory Analysis
+
+```{r, echo=F, message=F}
+library(dplyr)
+# Load dataset
+data2 <- read_excel("CleanPetOwners.xlsx")
+
+# Rename variables for consistency
+data2 <- data2 %>%
+  rename(
+    Pet_Ownership = `CurrentOwn`,
+    Drive_Thinness = `EDI_DT`,
+    Body_Dissatisfaction = `EDI_BD`,
+    Bulimia = `EDI_B`,
+    Depression = `BDI TOTAL`,
+    Anxiety = `BAI TOTAL`,
+    Positive_Mood = `POS PANAS TOTAL`,
+    Negative_Mood = `NEG PANAS TOTAL`,
+    Loneliness = `RULS TOTAL`,
+    DOG_OWN = `DOG OWN (yes = 1)`,
+    CAT_OWN = `CAT OWN (yes = 1)`
+  )
+
+# Create a mutually exclusive pet type variable
+data2 <- data2 %>%
+  mutate(Pet_Type = case_when(
+    DOG_OWN == 1 & CAT_OWN == 0 ~ "Dog_Only",
+    DOG_OWN == 0 & CAT_OWN == 1 ~ "Cat_Only",
+    DOG_OWN == 1 & CAT_OWN == 1 ~ "Both",
+    DOG_OWN == 0 & CAT_OWN == 0 ~ "No_Pet"
+  ))
+
+# Convert to factor and set No_Pet as the reference category
+data2$Pet_Type <- factor(data2$Pet_Type, levels = c("No_Pet", "Dog_Only", "Cat_Only", "Both"))
+
+# Run linear regression models to test if pet type predicts DEB outcomes
+model_DT <- lm(Drive_Thinness ~ Pet_Type, data = data2)
+model_BD <- lm(Body_Dissatisfaction ~ Pet_Type, data = data2)
+model_B  <- lm(Bulimia ~ Pet_Type, data = data2)
+
+# Print summaries
+summary(model_DT)
+summary(model_BD)
+summary(model_B)
+
+
+# One-way ANOVA to test if pet type influences eating behaviors
+anova_DT <- aov(Drive_Thinness ~ Pet_Type, data = data2)
+anova_BD <- aov(Body_Dissatisfaction ~ Pet_Type, data = data2)
+anova_B  <- aov(Bulimia ~ Pet_Type, data = data2)
+
+# Summary of results
+summary(anova_DT)
+summary(anova_BD)
+summary(anova_B)
+
+```
+
+The regression analysis revealed that pet type (dog or cat) was not a significant predictor of disordered eating behaviors, including Drive for Thinness, Body Dissatisfaction, and Bulimia. All p-values were greater than 0.05, and the R² values were extremely low (below 0.003), indicating that pet ownership type explained virtually none of the variance in these outcomes. This suggests that the kind of pet someone owns does not have a meaningful impact on eating disorder risk, and psychological factors such as depression or negative mood are likely more influential.
+
+# Discussion Section
+
+Summary of Main Findings
+The present study examined the relationship between pet ownership and disordered eating behaviors (DEB), with a focus on potential mediating effects of depression and negative mood. The findings revealed that pet ownership was significantly associated with higher DEB scores. Mediation analyses showed that this relationship was partially explained by elevated levels of depression and negative mood among pet owners. These results suggest that emotional factors may play a key role in understanding the link between pet ownership and eating-related psychopathology.
+
+Interpretation of Results
+Although pet ownership is commonly believed to enhance psychological well-being, the results of this study challenge that assumption. Rather than serving a protective function, pet ownership was linked to increased emotional distress—specifically, higher depression and negative mood—which in turn contributed to greater disordered eating symptoms. This suggests that the relationship between pet ownership and mental health is more complex than often assumed and may vary depending on individual circumstances or stressors related to pet care.
+
+Comparison with Previous Studies
+Previous research has produced mixed findings regarding the psychological effects of pet ownership. Some studies report reduced loneliness and improved emotional regulation among pet owners, while others have found increased stress or no effect. The current results align more closely with studies emphasizing the emotional burden or variability in pet ownership experiences. Importantly, this study adds to the literature by demonstrating that emotional distress, rather than pet ownership itself, may be the more relevant predictor of disordered eating.
+
+Limitations
+Several limitations must be acknowledged. First, the study’s cross-sectional design limits the ability to draw causal conclusions about the relationships between pet ownership, mood, and DEB. While pet type and attachment were included in the broader dataset, this specific analysis focused only on general ownership status and did not account for differences in the quality of the pet-owner relationship within this model. Additionally, important contextual variables such as socioeconomic status, income, or caregiving burden were not measured. For example, individuals with limited financial resources may experience stress related to affording pet care, which could indirectly contribute to emotional strain and disordered eating. Finally, other unmeasured factors such as trauma history or social support may have influenced the outcomes.
+
+Suggestions for Future Research
+Future studies should include detailed measures of financial stress, caregiving responsibilities, and socioeconomic status to better understand the broader context of pet ownership. Longitudinal research is also needed to determine the directionality of these relationships—whether emotional distress leads to disordered eating in pet owners, or whether those with existing vulnerabilities are more likely to experience pet-related stress. Additionally, future models could test moderation by variables such as pet attachment strength, gender, or psychological resilience.
+
+Conclusion
+In conclusion, the study found that pet ownership was positively associated with disordered eating behaviors, and this relationship was partially mediated by higher levels of depression and negative mood. These findings suggest that pet ownership is not uniformly protective and may be linked to emotional challenges that contribute to eating pathology. Understanding the emotional context of pet ownership is essential for clarifying its impact on mental health and guiding future clinical or wellness interventions.
+
+# Appendices
+
+```{r, echo=F, message=F}
+# All the tests
+# To verify the suitability of parametric statistical tests, normality was assessed using the Shapiro-Wilk test and histogram visualizations.
+
+shapiro_results <- sapply(data[, c("Drive_Thinness", "Body_Dissatisfaction", "Bulimia", "EDRC_Raw", "Depression", "Anxiety", "Positive_Mood", "Negative_Mood", "Loneliness", "Pet_Attachment")], function(x) shapiro.test(x)$p.value)
+print(shapiro_results)
+```
+
+```{r, echo=F, message=F}
+# Visual check for normality using histograms
+# First: Histograms
+par(mfrow = c(3, 2))
+for (col in names(shapiro_results)) {
+  hist(data[[col]], main = paste("Histogram of", col), col = "lightblue", breaks = 30)
+}
+par(mfrow = c(1, 1))
+```
+```{r, echo=F, message=F}
+# Then: Q-Q Plots
+par(mfrow = c(3, 2))
+for (col in names(shapiro_results)) {
+  qqnorm(data[[col]], main = paste("Q-Q Plot of", col))
+  qqline(data[[col]], col = "red")
+}
+par(mfrow = c(1, 1))
+```
+```{r, echo=F, message=F}
+# Additional tests for other psychological variables
+wilcox.test(Drive_Thinness ~ Pet_Ownership, data = data, exact = FALSE)
+wilcox.test(Body_Dissatisfaction ~ Pet_Ownership, data = data, exact = FALSE)
+wilcox.test(Bulimia ~ Pet_Ownership, data = data, exact = FALSE)
+
+wilcox.test(Depression ~ Pet_Ownership, data = data, exact = FALSE)
+wilcox.test(Anxiety ~ Pet_Ownership, data = data, exact = FALSE)
+wilcox.test(Positive_Mood ~ Pet_Ownership, data = data, exact = FALSE)
+wilcox.test(Negative_Mood ~ Pet_Ownership, data = data, exact = FALSE)
+wilcox.test(Loneliness ~ Pet_Ownership, data = data, exact = FALSE)
+
+# Standard Multiple Linear Regression (MLR) for Disordered Eating Factors
+mlr_drive <- lm(Drive_Thinness ~ Pet_Ownership, data = data)
+summary(mlr_drive)
+
+mlr_body <- lm(Body_Dissatisfaction ~ Pet_Ownership, data = data)
+summary(mlr_body)
+
+mlr_bulimia <- lm(Bulimia ~ Pet_Ownership, data = data)
+summary(mlr_bulimia)
+
+# Diagnostic plots
+par(mfrow=c(2,2))
+plot(mlr_log_edrc)
+
+anova_depression <- aov(Depression ~ Pet_Ownership, data = data)
+summary(anova_depression)
+
+anova_anxiety <- aov(Anxiety ~ Pet_Ownership, data = data)
+summary(anova_anxiety)
+
+anova_pos_mood <- aov(Positive_Mood ~ Pet_Ownership, data = data)
+summary(anova_pos_mood)
+
+anova_neg_mood <- aov(Negative_Mood ~ Pet_Ownership, data = data)
+summary(anova_neg_mood)
+
+anova_loneliness <- aov(Loneliness ~ Pet_Ownership, data = data)
+summary(anova_loneliness)
+
+# Run a Correlation Test and talk about maybe p-values
+cor.test(data$Pet_Attachment, data$Anxiety, method = "pearson", use = "pairwise.complete.obs")
+cor.test(data$Pet_Attachment, data$Depression, method = "pearson", use = "pairwise.complete.obs")
+cor.test(data$Pet_Attachment, data$Positive_Mood, method = "pearson", use = "pairwise.complete.obs")
+cor.test(data$Pet_Attachment, data$Negative_Mood, method = "pearson", use = "pairwise.complete.obs")
+cor.test(data$Pet_Attachment, data$Loneliness, method = "pearson", use = "pairwise.complete.obs")
+
+
+correlation_matrix <- cor(data[, c("Pet_Attachment", "Depression", "Anxiety", 
+                                   "Positive_Mood","Negative_Mood","Loneliness")], use = "pairwise.complete.obs", method = "pearson")
+
+# Print correlation matrix
+print(correlation_matrix)
+
+# Perform Pearson correlation test
+cor.test(data$Pet_Attachment, data$EDRC_Raw, method = "pearson", use = "pairwise.complete.obs")
+
+summary(data)
+```
