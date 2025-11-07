@@ -4,7 +4,6 @@
 **Program:** B.Sc. Applied Statistics, MacEwan University  
 **Capstone:** STAT 496 – Applied Statistics Consulting Project  
 **Tools:** R, RMarkdown, ggplot2, lavaan, psych, tidyverse  
-**Report:** [Final Report (PDF)](report/ParamFINALSTAT496REPORT.pdf)  
 
 ---
 
@@ -39,14 +38,6 @@ The goal was to provide actionable, data-driven evidence to guide **mental healt
 - **Libraries:** `tidyverse`, `psych`, `lavaan`, `ggplot2`, `semPlot`  
 - **Visualization:** Path diagrams, heatmaps, correlation matrices  
 - **Reporting:** RMarkdown → PDF  
-
----
-
-## 📊 Example Visuals
-<p align="center">
-  <img src="figures/fig_corrplot.png" width="400" alt="Correlation Heatmap">
-  <img src="figures/fig_mediation.png" width="400" alt="Mediation Path Diagram">
-</p>
 
 ---
 
